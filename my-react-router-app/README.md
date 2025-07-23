@@ -1,69 +1,42 @@
-# React + TypeScript + Vite
+# My React Router App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Це навчальний React-застосунок із маршрутизацією, створений для демонстрації роботи з React Router та Tailwind CSS.
 
-Currently, two official plugins are available:
+## Основні можливості
+- Головна сторінка, сторінка "Про нас" та сторінка "Контакти"
+- Зручна навігація з виділенням активного посилання
+- Сучасний дизайн із використанням Tailwind CSS
+- Обробка неіснуючих маршрутів (404)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Встановлення
+1. Перейдіть у директорію проєкту:
+   ```bash
+   cd my-react-router-app
+   ```
+2. Встановіть залежності:
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Запуск
+Запустіть застосунок у режимі розробки:
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Відкрийте [http://localhost:5173](http://localhost:5173) у браузері для перегляду застосунку.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Структура сторінок
+- **Головна** (`/`): Привітальна сторінка з унікальним контентом
+- **Про нас** (`/about`): Інформація про команду та цінності
+- **Контакти** (`/contacts`): Контактна інформація для зв'язку
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Технології
+- [React](https://react.dev/)
+- [React Router](https://reactrouter.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/)
+
+---
+
+_Застосунок створено для навчальних цілей. Ви можете змінювати та розширювати його під свої потреби!_
